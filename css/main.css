@@ -1,0 +1,349 @@
+/*
+font-family: 'Spartan', sans-serif;
+font-family: 'Staatliches', cursive;
+*/
+:root {
+    --main-dark-color: #434141;
+    --main-light-color: #C58F06;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    vertical-align: baseline;
+    max-width: 100%;
+    font-smooth: always;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    font-size: 100%
+}
+
+.navigation-bar {
+    width: 100vw;
+    min-height: 60px;
+    background-color: var(--main-dark-color);
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.menu-list {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+}
+
+.menu-item {
+    width: 80px;
+    margin: 20px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Spartan', sans-serif;
+}
+
+.menu-item:last-child {
+    background-color: var(--main-light-color);
+    padding: 10px;
+    width: 100px;
+    border-radius: 6px;
+}
+
+.menu-item:hover {
+    cursor: pointer;
+}
+
+.navigation-bar h1 {
+    font-family: 'Staatliches', cursive;
+    text-transform: uppercase;
+    color: var(--main-light-color);
+    margin: 20px;
+    letter-spacing: 2px;
+}
+
+.homepage-background {
+    width: 100vw;
+    height: 540px;
+    background-image: url('../img/background.svg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.about-us-wrapper {
+    width: 100vw;
+    min-height: 750px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    -moz-box-shadow:    0px 0px 15px 0px rgba(50, 50, 50, 0.5);
+    box-shadow:         0px 0px 15px 0px rgba(50, 50, 50, 0.5);
+}
+
+.company-description {
+    width: 500px;
+
+}
+
+.company-logo {
+    width: 540px;
+    height: 677px;
+}
+
+.company-description article h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.company-description article p {
+    font-size: 24px;
+    font-family: 'Spartan', sans-serif;
+}
+
+.realizations-wrapper {
+    width: 100vw;
+    background-color: var(--main-dark-color);
+    color: white;
+    padding: 50px 0;
+    -moz-box-shadow:    0px 0px 15px 0px rgba(50, 50, 50, 0.5);
+    box-shadow:         0px 0px 15px 0px rgba(50, 50, 50, 0.5);
+}
+
+.realizations-wrapper h2 {
+    font-size: 2rem;
+    text-align: center;
+    padding: 40px;
+}
+
+.realizations-grid {
+    width: 95vw;
+    height: 31vw;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 auto;
+    margin-top: 25px;
+}
+
+.realization-item {
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/suspended_systems.svg');
+    background-size: cover;
+    background-position: center;
+    transition: transform .4s ease-in-out;
+}
+
+.realization-item:first-child {
+    background-image: url('../img/construction.svg');
+}
+
+.realization-item:last-child {
+    background-image: url('../img/towers.svg');
+}
+
+.realization-item:hover {
+    transform: scale(.9);
+    border: 2px solid #fff;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.gallery-wrapper {
+    width: 100vw;
+    color: #fff;
+    background-color: var(--main-light-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 45px;
+}
+
+.gallery-wrapper h2 {
+    font-size: 2rem;
+    margin: 25px;
+    text-align: center;
+}
+
+.gallery-wrapper .gallery-nav {
+    display: flex;
+    margin: 25px;
+    cursor: pointer;
+    font-size: 22px;
+}
+
+.gallery-wrapper .gallery-nav p {
+    display: flex;
+    width: 300px;
+    font-size: 20px;
+    padding: 10px 20px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #fff;
+    border-right: none;
+    transition: all .5s ease;
+    font-family: 'Spartan', sans-serif;
+
+}
+
+.gallery-wrapper .gallery-nav p:last-child {
+    border-right: 2px solid #fff;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.gallery-wrapper .gallery-nav p:first-child {
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+
+.gallery-wrapper .masonry-gallery {
+    max-width: 900px;
+    margin: 0 auto;
+    column-count: 4;
+    column-gap: .6em;
+}
+
+.gallery-wrapper .masonry-gallery div img {
+    margin: 0 0 .4em;
+    width: 100%;
+    cursor: pointer;
+}
+
+.clicked {
+    background-color: #fff;
+    color: var(--main-light-color);
+    -moz-box-shadow:    0px 0px 15px 0px rgba(30, 30, 30, 0.5);
+    box-shadow:         0px 0px 15px 0px rgba(30, 30, 30, 0.5);
+}
+
+.visible {
+    display: block;
+}
+
+.unvisible {
+    display: none;
+}
+
+.contact-wrapper {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 50px;
+    -moz-box-shadow:    0px 0px 15px 0px rgba(50, 50, 50, 0.5);
+    box-shadow:         0px 0px 15px 0px rgba(50, 50, 50, 0.5);
+}
+
+.contact-wrapper h2 {
+    font-size: 2rem;
+    margin: 25px;
+    text-align: center;
+}
+
+.contact-wrapper .container {
+    width: 100vw;
+    display: flex;
+}
+
+.contact-wrapper .container .contact h3 {
+    padding: 30px;
+}
+
+.contact-wrapper .container .contact p {
+padding: 0 30px;
+}
+
+.copy {
+    width: 100vw;
+    height: 50px;
+    background-color: var(--main-dark-color);
+    color: white;
+    font-size: 21px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    -moz-box-shadow:    0px 0px 15px 0px rgba(50, 50, 50, 0.5);
+    box-shadow:         0px 0px 15px 0px rgba(50, 50, 50, 0.5);
+}
+
+.company-description article h2::before,
+.contact-wrapper h2::before {
+    content: '';
+    position: absolute;
+    width: 170px;
+    height: 55px;
+    background: var(--main-light-color);
+    z-index: -1;
+    border-radius: 6px;
+    transform: translateY(-20%);
+}
+
+.contact-wrapper h2::before {
+    width: 80px;
+}
+
+@media (max-width: 1125px) {
+    nav {
+        display: none;
+    }
+
+    .about-us-wrapper {
+        flex-direction: column;
+        padding: 40px;
+    }
+
+    .about-us-wrapper img {
+        width: 80vw;
+        height: auto;
+    }
+
+    .realizations-grid {
+       display: flex;
+       flex-direction: column;
+    }
+
+    .realizations-grid .realization-item {
+        width: 95vw;
+        height: 95vw;
+    }
+
+    .gallery-wrapper .gallery-nav {
+        flex-direction: column;
+    }
+
+    .gallery-wrapper .gallery-nav p {
+        height: 50px;
+        border: 1px solid #fff;
+        border-radius: 0;
+        padding: 15px;
+    }
+
+    .gallery-wrapper .gallery-nav p:first-child {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        border-bottom: 0;
+    }
+
+    .gallery-wrapper .gallery-nav p:last-child {
+        border-top: 0;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    .copy {
+        font-size: 1rem;
+    }
+}
