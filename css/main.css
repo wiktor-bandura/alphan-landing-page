@@ -74,7 +74,7 @@ body {
 .homepage-background {
     width: 100vw;
     height: 540px;
-    background-image: url('../img/background.svg');
+    background-image: url('../img/background.jpeg');
     background-attachment: fixed;
     background-repeat: no-repeat;
 }
@@ -296,6 +296,10 @@ padding: 0 30px;
 }
 
 @media (max-width: 1125px) {
+
+    h1 {
+        font-size: 1.5rem;
+    }
     nav {
         display: none;
     }
