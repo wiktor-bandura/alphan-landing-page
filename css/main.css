@@ -304,9 +304,19 @@ padding: 0 30px;
         display: none;
     }
 
+    .homepage-background {
+        background-attachment: initial;
+        background-position: 55%;
+        background-size: cover;
+    }
+
     .about-us-wrapper {
         flex-direction: column;
         padding: 40px;
+    }
+
+    .company-description p {
+        font-size: 1rem;
     }
 
     .about-us-wrapper img {
@@ -332,7 +342,8 @@ padding: 0 30px;
         height: 50px;
         border: 1px solid #fff;
         border-radius: 0;
-        padding: 15px;
+        padding: 25px;
+        font-size: 1rem;
     }
 
     .gallery-wrapper .gallery-nav p:first-child {
