@@ -8,6 +8,7 @@
       type="image/ico"
       href="./img/favicon.png">
     <title>Alphan - Strona internetowa</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.7.1/viewer.min.css" integrity="sha512-JtP5cHnAc8qtRr8ra9vwRa1ba2GbA3gZxMxuseqpjQPwP8+zjXSTnKbiYdUvD+a4lXOoo4bAc1Kmaxufh8n0YQ==" crossorigin="anonymous" />
     <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@200;300&family=Staatliches&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/main.css">
@@ -47,7 +48,7 @@
             <div class="realizations-wrapper">
                 <h2>Czym się zajmujemy?</h2>
 
-                <div class="realizations-grid">
+                <div data-aos="zoom-out-up" class="realizations-grid">
                 <a data-scroll href="#gallery" class="realization-item" data-cat="1"></a>
                 <a data-scroll href="#gallery" class="realization-item" data-cat="2"></a>
                 <a data-scroll href="#gallery" class="realization-item" data-cat="3"></a>
@@ -56,15 +57,15 @@
         </section>
         <section id="gallery">
             <div class="gallery-wrapper">
-                <h2>Galeria zdjęć</h2>
+                <h2 data-aos="zoom-out-up">Galeria zdjęć</h2>
 
-                <div class="gallery-nav">
+                <div data-aos="zoom-out-up" class="gallery-nav">
                     <p data-cat="1">KONSTRUKCJE STALOWE</p>
                     <p class="clicked" data-cat="2">SYSTEMY PODWIESZANE</p>
                     <p data-cat="3">WIEŻE KRATOWE</p>
                 </div>
 
-                <div class="masonry-gallery">
+                <div data-aos="zoom-out-up" class="masonry-gallery">
                         <div><img class="photo unvisible" data-cat="1" src="./img/constructions/1.jpeg" alt=""></div>
                         <div><img class="photo unvisible" data-cat="1" src="./img/constructions/2.jpeg" alt=""></div>
                         <div><img class="photo unvisible" data-cat="1" src="./img/constructions/3.jpeg" alt=""></div>
@@ -103,9 +104,9 @@
                         Katarzyna Hankus <br>
                         ul. Szkolna 19 <br>
                         46-060 Chrząszczyce <br>
-                        E-mail: alphan1@wp.pl <br>
-                        Kom: 604  208  717 <br>
-                        Biuro: 692 922 895 <br>
+                        E-mail: <a href="mailto:alphan1@wp.pl">alphan1@wp.pl</a> <br>
+                        Kom: <a href="tel:604-208-717">604 208 717</a> <br>
+                        Biuro: <a href="tel:692-922-895">692 922 895</a> <br>
                     </p>
                 </div>
                 <div class="map">
@@ -130,6 +131,7 @@
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0/dist/smooth-scroll.polyfills.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.7.1/viewer.min.js" integrity="sha512-nwFyOmSB8H1ol9cl2ioAgzoMgr+2TNimMx6kNajHcpXyNHsnpdkxJQu9RDyVp0CIiuESsMajBKBrnBVv3HA9yQ==" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="./src/view.js"></script>
     <script async src="./src/gallery-switch.js"></script>
     <script src="./src/scroll.js"></script>

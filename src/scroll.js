@@ -3,3 +3,5 @@ var scroll = new SmoothScroll('a[href*="#"]', {
     speedAsDuration: true,
     updateURL: false
 });
+
+AOS.init();

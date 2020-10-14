@@ -265,10 +265,17 @@ body {
 
 .contact-wrapper .container .contact h3 {
     padding: 30px;
+    font-size: 1.3rem;
 }
 
 .contact-wrapper .container .contact p {
-padding: 0 30px;
+    font-size: 1.1rem;
+    padding: 0 30px;
+    line-height: 2rem;
+}
+
+.contact-wrapper .container .contact p a {
+    color: var(--main-light-color);
 }
 
 .copy {
